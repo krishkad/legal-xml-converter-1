@@ -38,7 +38,7 @@ interface Affidavit {
 // Initialize NLP tools
 // Provide an empty abbreviations list to SentenceTokenizer to satisfy type requirements
 const tokenizer = new natural.SentenceTokenizer([]);
-const wordTokenizer = new natural.WordTokenizer();
+// const wordTokenizer = new natural.WordTokenizer();
 
 // Function to extract text from input file
 async function extractText(filePath: string): Promise<string> {
