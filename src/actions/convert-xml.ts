@@ -1,10 +1,9 @@
 "use server";
 
-import fs, { promises } from "fs";
-import PDFParser from "pdf2json";
+import { promises } from "fs";
 import mammoth from "mammoth";
-import path from "path";
 import * as natural from "natural";
+import PDFParser from "pdf2json";
 import { create } from "xmlbuilder2";
 
 // Define interfaces for affidavit structure
@@ -51,6 +50,7 @@ async function extractText(filePath: string): Promise<string> {
       pdfParser.loadPDF(filePath);
 
       // Use type assertion for event handlers due to incomplete @types/pdf2json
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       pdfParser.on("pdfParser_dataReady", (pdfData: any) => {
         let text = "";
         for (const page of pdfData.Pages) {
@@ -62,6 +62,7 @@ async function extractText(filePath: string): Promise<string> {
       });
 
       // Explicitly type the error event to avoid 'keyof EventMap' error
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       pdfParser.on("error" as any, (err: Error) => reject(err));
     });
   } else if (ext === "docx") {
@@ -87,7 +88,7 @@ function parseAffidavit(text: string): Affidavit {
     "preamble";
 
   sentences.forEach((sentence, index) => {
-    const tokens = wordTokenizer.tokenize(sentence);
+    // const tokens = wordTokenizer.tokenize(sentence);
     sentence = sentence.trim();
 
     // Identify title (first sentence or matches "Affidavit of...")
@@ -208,18 +209,9 @@ export async function convertAffidavitToXML(
     // Step 4: Save XML to output file
     await promises.writeFile(outputFile, xmlOutput);
     console.log(`XML saved to ${outputFile}`);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     console.error("Error:", error.message);
   }
 }
 
-// Example usage
-// (async () => {
-//   const inputFile = "sample_affidavit.pdf"; // Replace with your file
-//   const outputFile = "output_affidavit.xml";
-//   await convertAffidavitToXML(inputFile, outputFile);
-// })();
-
-// lib/ocrFromPdf.ts
-import { fromPath } from "pdf2pic";
-import Tesseract from "tesseract.js";

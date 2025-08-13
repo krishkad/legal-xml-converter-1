@@ -55,7 +55,7 @@ const TestimonialsSection = () => {
                   ))}
                 </div>
                 <p className="text-legal-secondary italic text-lg leading-relaxed mb-6">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
               </div>
               <div className="border-t border-legal-border pt-6">

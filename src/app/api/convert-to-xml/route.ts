@@ -1,12 +1,9 @@
-import { convertAffidavitToXML } from "@/actions/convert-xml";
-import { writeFile } from "fs/promises";
+import fs, { promises } from "fs";
 import { NextRequest, NextResponse } from "next/server";
+import OpenAI from "openai";
 import path from "path";
 import { createWorker } from "tesseract.js";
 import { fileURLToPath } from "url";
-import sharp from "sharp";
-import OpenAI from "openai";
-import fs, { promises } from "fs";
 
 const openai = new OpenAI({
   apiKey: process.env.OPENROUTER_API_KEY || "",
