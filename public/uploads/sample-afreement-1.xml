@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <agreement>
+    <meta>
+      <identification source="#scanned">
+        <FRBRWork>
+          <FRBRcountry value="USA"/>
+          <FRBRjurisdiction value="Federal"/>
+          <FRBRdate date=""/>
+          <FRBRlanguage language="en"/>
+          <FRBRauthor href="#DisclosingParty"/>
+          <FRBRauthor href="#ReceivingParty"/>
+          <FRBRthis value="/akn/us/federal/agreement/nda/undated"/>
+        </FRBRWork>
+      </identification>
+      <classification source="#auto">
+        <keyword value="Non-Disclosure Agreement"/>
+        <keyword value="NDA"/>
+      </classification>
+      <lifecycle source="#auto">
+        <eventRef eId="evt1" date="" type="generation"/>
+      </lifecycle>
+    </meta>
+    <preface>
+      <docTitle>NON-DISCLOSURE AGREEMENT (NDA)</docTitle>
+      <preamble>
+        <p>This Nondisclosure Agreement or ("Agreement") has been entered into on the date of and is by and between:</p>
+        <p>Party Disclosing Information: with a mailing address of (“Disclosing Party”).</p>
+        <p>Party Receiving Information: with a mailing address of (“Receiving Party”).</p>
+        <p>For the purpose of preventing the unauthorized disclosure of Confidential Information as defined below. The parties agree to enter into a confidential relationship concerning the disclosure of certain proprietary and confidential information ("Confidential Information").</p>
+      </preamble>
+    </preface>
+    <body>
+      <section eId="sec_1">
+        <num>1.</num>
+        <heading>Definition of Confidential Information</heading>
+        <paragraph eId="sec_1__p1">
+          <content>
+            <p>For purposes of this Agreement, "Confidential Information” shall include all information or material that has or could have commercial value or other utility in the business in which Disclosing Party is engaged. If Confidential Information is in written form, the Disclosing Party shall label or stamp the materials with the word "Confidential" or some similar warning. If Confidential Information is transmitted orally, the Disclosing Party shall promptly provide writing indicating that such oral communication constituted Confidential Information.</p>
+          </content>
+        </paragraph>
+      </section>
+      <section eId="sec_2">
+        <num>2.</num>
+        <heading>Exclusions from Confidential Information</heading>
+        <paragraph eId="sec_2__p1">
+          <content>
+            <p>Receiving Party's obligations under this Agreement do not extend to information that is: (a) publicly known at the time of disclosure or subsequently becomes publicly known through no fault of the Receiving Party; (b) discovered or created by the Receiving Party before disclosure by Disclosing Party; (c) learned by the Receiving Party through legitimate means other than from the Disclosing Party or Disclosing Party's representatives; or (d) is disclosed by Receiving Party with Disclosing Party's prior written approval.</p>
+          </content>
+        </paragraph>
+      </section>
+      <section eId="sec_3">
+        <num>3.</num>
+        <heading>Obligations of Receiving Party</heading>
+        <paragraph eId="sec_3__p1">
+          <content>
+            <p>Receiving Party shall hold and maintain the Confidential Information in strictest confidence for the sole and exclusive benefit of the Disclosing Party. Receiving Party shall carefully restrict access to Confidential Information to employees, contractors and third parties as is reasonably required and shall require those persons to sign nondisclosure restrictions at least as protective as those in this Agreement. Receiving Party shall not, without the prior written approval of Disclosing Party, use for Receiving Party's benefit, publish, copy, or otherwise disclose to others, or permit the use by others for their benefit or to the detriment of Disclosing Party, any Confidential Information. Receiving Party shall return to Disclosing Party any and all records, notes, and other written, printed, or tangible materials in its possession pertaining to Confidential Information immediately if Disclosing Party requests it in writing.</p>
+          </content>
+        </paragraph>
+      </section>
+      <section eId="sec_4">
+        <num>4.</num>
+        <heading>Time Periods</heading>
+        <paragraph eId="sec_4__p1">
+          <content>
+            <p>The nondisclosure provisions of this Agreement shall survive the termination of this Agreement and Receiving Party's duty to hold Confidential Information in confidence shall remain in effect until the Confidential Information no longer qualifies as a trade secret or until Disclosing Party sends Receiving Party written notice releasing Receiving Party from this Agreement, whichever occurs first.</p>
+          </content>
+        </paragraph>
+      </section>
+    </body>
+  </agreement>
+</akomaNtoso>

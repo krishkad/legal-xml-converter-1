@@ -1,0 +1,61 @@
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso>
+  <agreement>
+    <meta>
+      <identification source="#scanned">
+        <FRBRWork>
+          <FRBRcountry value="USA"/>
+          <FRBRjurisdiction value="FederalCourt"/>
+          <FRBRdate date=""/>
+          <FRBRlanguage language="en"/>
+          <FRBRauthor href="#Party1"/>
+          <FRBRauthor href="#Party2"/>
+          <FRBRthis value="/agreement/nda"/>
+        </FRBRWork>
+      </identification>
+      <classification source="#editor">
+        <keyword>Non-Disclosure Agreement</keyword>
+      </classification>
+    </meta>
+    <preface>
+      <docTitle>Non Disclosure Agreement</docTitle>
+      <block name="inConfidence">IN CONFIDENCE</block>
+      <preamble>
+        <p>This agreement dated &lt;Day Month Years&gt; is made between «Company Name» and «Company Name» referred to herein as the “Parties” or in the singular as a “Party”. The Parties intend to disclose each to the other information relating to new business development.</p>
+      </preamble>
+    </preface>
+    <body>
+      <section eId="sec-whereas">
+        <num>WHEREAS:</num>
+        <paragraph eId="sec-whereas_para1">
+          <num>1.</num>
+          <content><p>The Parties acknowledge and agree that the disclosure referred to in the Recitals may include the exchange of valuable and confidential and proprietary Information of both parties and agree to receive and hold the information upon the terms and conditions set forth in this Agreement.</p></content>
+        </paragraph>
+        <paragraph eId="sec-whereas_para2">
+          <num>2.</num>
+          <content><p>For the purposes of this Agreement the term "Proprietary Information" shall mean any information disclosed by one Party (the Disclosing Party) to the other Party (the Receiving Party) under this Agreement, whether in writing, oral, visual, in the form of samples or models or otherwise, provided that such information, if written is clearly and conspicuously marked as being proprietary or confidential and if oral, visual or in any non-written form is designated as Proprietary Information at the time of disclosure and confirmed in writing within thirty (30) days of disclosure; All the protections and restrictions in this Agreement as to the use and disclosure of Proprietary Information shall apply during the period of thirty days referred to above.</p></content>
+        </paragraph>
+        <paragraph eId="sec-whereas_para3">
+          <num>3.</num>
+          <content><p>Proprietary Information shall also include any information which can be obtained by examination, testing or analysis of any hardware and component part thereof, software or material samples provided by the Disclosing Party notwithstanding the fact that the requirements for making designation and confirmation referred to above shall not have been met.</p></content>
+        </paragraph>
+      </section>
+      <article eId="art1">
+        <num>1.</num>
+        <heading>Purpose</heading>
+        <paragraph eId="art1_para1">
+          <content><p>The parties agree to protect confidential information...</p></content>
+        </paragraph>
+      </article>
+      <article eId="art2">
+        <num>2.</num>
+        <heading>Obligations</heading>
+        <paragraph eId="art2_para1">
+          <content><p>The Receiving Party agrees not to disclose any information...</p></content>
+        </paragraph>
+      </article>
+    </body>
+  </agreement>
+</akomaNtoso>
+```
